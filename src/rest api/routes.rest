@@ -1,0 +1,37 @@
+GET http://localhost:3000/products/5f3416da88f5e921f06c399b
+
+
+###
+
+
+GET http://localhost:3000/subscribers/5f1ac53b00e6732184d281a6
+
+
+###
+
+POST http://localhost:3000/products
+Content-Type: application/json
+
+ {
+      "id": 1,
+      "quantity":20,
+      "name": "Apple",
+      "description": "A fruit a day keeps doctors away",
+      "price": 90,
+      "imageUrl": "https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/topic_centers/Do_Apples_Affect_Diabetes_and_Blood_Sugar_Levels-732x549-thumbnail.jpg?w=756&h=567"
+    }
+
+###
+   
+DELETE  http://localhost:3000/subscribers/5f1acf6b7669c805408d3da9
+
+###
+ 
+PATCH  http://localhost:3000/subscribers/5f1ac8de34620600805960ae
+Content-Type: application/json
+
+{
+    "name":  "kamau ones"
+    
+}
+    

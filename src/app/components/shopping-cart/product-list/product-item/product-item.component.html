@@ -1,0 +1,18 @@
+<div class="card mb-4 shadow-sm">
+  <img class="bd-placeholder-img card-img-top" width="100%" height="100px" [src]="productItem.imageUrl">
+  <div class="card-body">
+    <p class="card-text">{{productItem.name}}</p>
+    <p class="card-text"> <strong> {{productItem.price |currency:"Ksh" }}
+      </strong></p>
+
+    <p class="card-text"> {{productItem.description}}</p>
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="btn-group">
+        <button type="button" class="btn btn-sm btn-info product-btn" (click)="handleAddToCart()">Add to Cart</button>
+        <button type="button" class="btn btn-sm btn-success product-btn" [routerLink]="['/view-details']"
+        routerLinkActive="router-link-active"> View Details</button>
+        <button type="button" class="btn btn-sm btn-danger product-btn" (click)="removeProduct(productItem.id)">Del</button>
+
+    </div>
+  </div>
+</div>
